@@ -1,0 +1,58 @@
+/* Estilos para el contenedor de navegación */
+.nav-principal {
+    background-color: #414549; /* Color de fondo del nav */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Eliminar los estilos de lista predeterminados */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilo para los items de la lista */
+.menu-item {
+    margin-right: 15px; /* Espaciado entre los botones */
+}
+
+/* El último elemento no debe tener margen derecho */
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para los enlaces (se ven como botones) */
+.menu-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #758b7b; /* Color de fondo de los botones */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los botones */
+.menu-link:hover {
+    background-color: #218838; /* Color de fondo al pasar el cursor */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center; /* Centrar los elementos verticalmente */
+    }
+
+    .menu-item {
+        margin-bottom: 10px;
+        margin-right: 0; /* No margin a la derecha en versión móvil */
+    }
+
+    .menu-item:last-child {
+        margin-bottom: 0;
+    }
+}
